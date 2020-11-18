@@ -1,3 +1,4 @@
+{% from '_macros.html' import show_job, show_jobs with context %}
 <!-- templates/layout.html -->
 <!doctype html>
 <html>
@@ -10,8 +11,7 @@
   <body>
     <div class="container top">
       <div class="content">
-        {% block content %}
-          {% from '_macros.html' import show_job, show_jobs with context %}
+        {% block content %}      
         {% endblock %}
       </div>
     </div>
